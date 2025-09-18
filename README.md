@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# Portfolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un portfolio moderno y responsivo construido con Vite, React, TypeScript y TailwindCSS.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Diseño Responsivo**: Optimizado para todos los dispositivos
+- **Navegación Suave**: Scroll suave entre secciones
+- **Componentes Modulares**: Arquitectura limpia y reutilizable
+- **TypeScript**: Tipado estático para mayor robustez
+- **TailwindCSS**: Estilos modernos y consistentes
+- **Formulario de Contacto**: Funcionalidad de contacto integrada
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Vite**: Herramienta de construcción rápida
+- **React 19**: Biblioteca de interfaz de usuario
+- **TypeScript**: Superset tipado de JavaScript
+- **TailwindCSS**: Framework de CSS utilitario
+- **ESLint**: Linter para mantener código limpio
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Instalación y Uso
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Instalar dependencias**:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   npm install
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Ejecutar en modo desarrollo**:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```bash
+   npm run dev
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Construir para producción**:
+
+   ```bash
+   npm run build
+   ```
+
+4. **Previsualizar build de producción**:
+   ```bash
+   npm run preview
+   ```
+
+## 🎨 Secciones Incluidas
+
+- **Inicio**: Presentación personal y llamada a la acción
+- **Experiencia**: Historial profesional con tecnologías
+- **Proyectos**: Portfolio con proyectos destacados
+- **Habilidades**: Skills organizadas por categorías
+- **Contacto**: Formulario funcional y información de contacto
+
+## 📱 Responsive Design
+
+El portfolio está optimizado para:
+
+- Móviles (320px+)
+- Tablets (768px+)
+- Desktop (1024px+)
+- Pantallas grandes (1280px+)
+
+## 🔧 Scripts Disponibles
+
+- `npm run dev`: Servidor de desarrollo
+- `npm run build`: Construcción para producción
+- `npm run preview`: Previsualizar build
+- `npm run lint`: Ejecutar linter
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
