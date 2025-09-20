@@ -1,21 +1,19 @@
-import React from "react";
-
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gray-100 bg-gray-800 text-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Información personal */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Portfolio</h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-600 text-gray-300 mb-4">
               Desarrollador Full Stack apasionado por crear experiencias
               digitales increíbles.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
               >
                 <svg
                   className="w-6 h-6"
@@ -27,7 +25,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
               >
                 <svg
                   className="w-6 h-6"
@@ -39,7 +37,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
               >
                 <svg
                   className="w-6 h-6"
@@ -59,7 +57,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#inicio"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
                 >
                   Inicio
                 </a>
@@ -67,7 +65,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#experiencia"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
                 >
                   Experiencia
                 </a>
@@ -75,7 +73,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#proyectos"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
                 >
                   Proyectos
                 </a>
@@ -83,7 +81,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#habilidades"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
                 >
                   Habilidades
                 </a>
@@ -91,7 +89,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#contacto"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 text-gray-300 hover:text-gray-900 hover:text-white transition-colors"
                 >
                   Contacto
                 </a>
@@ -102,7 +100,7 @@ const Footer: React.FC = () => {
           {/* Información de contacto */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
-            <div className="space-y-2 text-gray-300">
+            <div className="space-y-2 text-gray-600 text-gray-300">
               <p>tu.email@ejemplo.com</p>
               <p>+1 (555) 123-4567</p>
               <p>Ciudad, País</p>
@@ -110,8 +108,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-300">
+        <div className="border-t border-gray-300 border-gray-700 mt-8 pt-8 text-center">
+          <p className="text-gray-600 text-gray-300">
             © 2024 Portfolio. Todos los derechos reservados.
           </p>
         </div>

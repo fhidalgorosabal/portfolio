@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Contacto: React.FC = () => {
+const Contacto = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,20 +19,19 @@ const Contacto: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario
     console.log("Formulario enviado:", formData);
     alert("¡Gracias por tu mensaje! Te contactaré pronto.");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-50">
+    <section id="contacto" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Contacto
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             ¿Tienes un proyecto en mente? ¡Me encantaría escuchar sobre él!
           </p>
         </div>
@@ -41,14 +40,14 @@ const Contacto: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Información de contacto */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
                 Información de Contacto
               </h3>
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
                     <svg
-                      className="w-6 h-6 text-blue-600"
+                      className="w-6 h-6 text-blue-600 dark:text-blue-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -62,17 +61,17 @@ const Contacto: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-600">Email</p>
-                    <p className="text-gray-800 font-medium">
+                    <p className="text-gray-600 dark:text-gray-400">Email</p>
+                    <p className="text-gray-800 dark:text-gray-200 font-medium">
                       tu.email@ejemplo.com
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-6 h-6 text-green-600 dark:text-green-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -86,17 +85,17 @@ const Contacto: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-600">Teléfono</p>
-                    <p className="text-gray-800 font-medium">
+                    <p className="text-gray-600 dark:text-gray-400">Teléfono</p>
+                    <p className="text-gray-800 dark:text-gray-200 font-medium">
                       +1 (555) 123-4567
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mr-4">
                     <svg
-                      className="w-6 h-6 text-purple-600"
+                      className="w-6 h-6 text-purple-600 dark:text-purple-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -116,15 +115,17 @@ const Contacto: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-600">Ubicación</p>
-                    <p className="text-gray-800 font-medium">Ciudad, País</p>
+                    <p className="text-gray-600 dark:text-gray-400">Ubicación</p>
+                    <p className="text-gray-800 dark:text-gray-200 font-medium">
+                      Ciudad, País
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Redes sociales */}
               <div className="mt-8">
-                <h4 className="text-lg font-semibold text-gray-800 mb-4">
+                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                   Sígueme
                 </h4>
                 <div className="flex space-x-4">
@@ -149,7 +150,7 @@ const Contacto: React.FC = () => {
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
                     </svg>
                   </a>
                   <a
@@ -170,14 +171,14 @@ const Contacto: React.FC = () => {
 
             {/* Formulario de contacto */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
                 Envíame un mensaje
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                   >
                     Nombre
                   </label>
@@ -188,7 +189,7 @@ const Contacto: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="Tu nombre completo"
                   />
                 </div>
@@ -196,7 +197,7 @@ const Contacto: React.FC = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                   >
                     Email
                   </label>
@@ -207,7 +208,7 @@ const Contacto: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="tu.email@ejemplo.com"
                   />
                 </div>
@@ -215,7 +216,7 @@ const Contacto: React.FC = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                   >
                     Asunto
                   </label>
@@ -226,7 +227,7 @@ const Contacto: React.FC = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="¿En qué puedo ayudarte?"
                   />
                 </div>
@@ -234,7 +235,7 @@ const Contacto: React.FC = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                   >
                     Mensaje
                   </label>
@@ -245,14 +246,14 @@ const Contacto: React.FC = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="Cuéntame sobre tu proyecto..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+                  className="w-full bg-blue-600 dark:bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-200"
                 >
                   Enviar Mensaje
                 </button>

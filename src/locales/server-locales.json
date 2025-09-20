@@ -1,0 +1,57 @@
+{
+  "item-home": {
+    "es": "Inicio",
+    "en": "Home",
+    "pt": "Início"
+  },
+  "item-experience": {
+    "es": "Experiencia",
+    "en": "Experience",
+    "pt": "Experiência"
+  },
+  "item-projects": {
+    "es": "Proyectos",
+    "en": "Projects",
+    "pt": "Projetos"
+  },
+  "item-skills": {
+    "es": "Habilidades",
+    "en": "Skills",
+    "pt": "Habilidades"
+  },
+  "item-contact": {
+    "es": "Contacto",
+    "en": "Contact",
+    "pt": "Contato"
+  },
+  "home-title": {
+    "es": "Hola, soy ",
+    "en": "Hi, I'm ",
+    "pt": "Oi, sou "
+  },
+  "home-title-name": {
+    "es": "Fernando Hidalgo Rosabal",
+    "en": "Fernando Hidalgo Rosabal",
+    "pt": "Fernando Hidalgo Rosabal"
+  },
+  "home-description": {
+    "es": "Ingeniero en Ciencias Informáticas y Desarrollador Web Full-Stack con amplia experiencia en el desarrollo de aplicaciones web modernas. Me apasiona transformar ideas en soluciones tecnológicas innovadoras.",
+    "en": "Computer Science Engineer and Full-Stack Web Developer with extensive experience in developing modern web applications. I’m passionate about turning ideas into innovative technological solutions.",
+    "pt": "Engenheiro em Ciências da Computação e Desenvolvedor Web Full-Stack com ampla experiência no desenvolvimento de aplicações web modernas. Sou apaixonado por transformar ideias em soluções tecnológicas inovadoras."
+  },
+  "home-button-1": {
+    "es": "LinkedIn",
+    "en": "LinkedIn",
+    "pt": "LinkedIn"
+  },
+  "home-button-2": {
+    "es": "GitHub",
+    "en": "GitHub",
+    "pt": "GitHub"
+  },
+  "home-button-3": {
+    "es": "Descargar CV",
+    "en": "Download CV",
+    "pt": "Descargar CV"
+  }
+}

@@ -1,6 +1,4 @@
-import React from "react";
-
-const Habilidades: React.FC = () => {
+const Habilidades = () => {
   const skills = [
     { name: "JavaScript", level: 90, category: "languages" },
     { name: "TypeScript", level: 85, category: "languages" },
@@ -45,13 +43,13 @@ const Habilidades: React.FC = () => {
   };
 
   return (
-    <section id="habilidades" className="py-20 bg-white">
+    <section id="habilidades" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Habilidades
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Tecnologías y herramientas que domino para crear soluciones
             innovadoras
           </p>
@@ -60,8 +58,11 @@ const Habilidades: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {["languages", "frontend", "backend", "tools"].map((category) => (
-              <div key={category} className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+              <div
+                key={category}
+                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg"
+              >
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">
                   {getCategoryLabel(category)}
                 </h3>
                 <div className="space-y-4">
@@ -70,14 +71,14 @@ const Habilidades: React.FC = () => {
                     .map((skill) => (
                       <div key={skill.name}>
                         <div className="flex justify-between items-center mb-2">
-                          <span className="text-gray-700 font-medium">
+                          <span className="text-gray-700 dark:text-gray-300 font-medium">
                             {skill.name}
                           </span>
-                          <span className="text-gray-500 text-sm">
+                          <span className="text-gray-500 dark:text-gray-400 text-sm">
                             {skill.level}%
                           </span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                           <div
                             className={`h-2 rounded-full ${getCategoryColor(
                               category
