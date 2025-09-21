@@ -37,8 +37,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-gray-200/60 dark:bg-gray-900/60 backdrop-blur-md shadow-lg"
-          : "bg-gray-200/50 dark:bg-gray-900/50 backdrop-blur-sm"
+          ? "bg-sky-800/50 dark:bg-gray-900/50 backdrop-blur-md shadow-lg"
+          : "bg-sky-800/50 dark:bg-gray-900/50 backdrop-blur-sm"
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
@@ -51,7 +51,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="py-2 px-5 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-200 cursor-pointer"
+                  className="py-2 px-5 rounded-lg hover:bg-sky-200 dark:hover:bg-gray-700 text-gray-100 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-200 cursor-pointer"
                 >
                   {item.label}
                 </button>
@@ -62,7 +62,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 p-2"
+                className="text-gray-100 dark:text-gray-300 hover:text-sky-200 dark:hover:text-sky-400 p-2"
                 aria-label="Toggle mobile menu"
               >
                 <svg
@@ -106,7 +106,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left px-4 py-2 text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
+                  className="text-left px-4 py-2 text-gray-100 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-sky-200 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
                 >
                   {item.label}
                 </button>

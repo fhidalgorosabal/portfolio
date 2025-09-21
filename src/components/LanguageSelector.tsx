@@ -60,7 +60,7 @@ const LanguageSelector = () => {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-200 cursor-pointer"
+        className="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-100 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-sky-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-200 cursor-pointer"
       >
         <span className="text-xl">{getLanguageFlag(currentLanguage)}</span>
         <FiChevronDown
@@ -71,13 +71,13 @@ const LanguageSelector = () => {
       </button>
 
       {isMenuOpen && (
-        <div className="absolute right-0 mt-2 w-40 rounded-lg shadow-lg bg-gray-300/90 dark:bg-gray-800/90 ring-1 ring-gray-200 dark:ring-gray-700 ring-opacity-5 z-50">
+        <div className="absolute right-0 mt-2 w-40 rounded-lg shadow-lg bg-sky-800/50 dark:bg-gray-800/90 ring-1 ring-sky-900/60 dark:ring-gray-700 ring-opacity-5 z-50">
           <div className="py-1" role="menu" aria-orientation="vertical">
             {languageLabels.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
+                className="flex items-center w-full px-4 py-2 text-sm text-gray-100 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-sky-200 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
                 role="menuitem"
               >
                 <span className="text-xl mr-2">
