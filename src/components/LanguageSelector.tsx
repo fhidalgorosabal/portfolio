@@ -60,7 +60,7 @@ const LanguageSelector = () => {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-200"
+        className="flex items-center space-x-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-200 cursor-pointer"
       >
         <span className="text-xl">{getLanguageFlag(currentLanguage)}</span>
         <FiChevronDown
@@ -77,7 +77,7 @@ const LanguageSelector = () => {
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:text-sky-600 dark:text-gray-300 dark:hover:text-sky-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
                 role="menuitem"
               >
                 <span className="text-xl mr-2">

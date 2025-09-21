@@ -1,3 +1,5 @@
+import type { ButtonHTMLAttributes } from "react";
+
 export interface Project {
   id: string;
   title: string;
@@ -39,3 +41,18 @@ export interface LanguageLabels {
   code: Language;
   label: string;
 }
+
+export interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: ButtonVariant;
+  size?: "sm" | "md" | "lg" | "xl";
+  isLoading?: boolean;
+  isScrolled?: boolean;
+  withCounter?: boolean;
+}
+
+export type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "success"
+  | "danger"
+  | "outline";

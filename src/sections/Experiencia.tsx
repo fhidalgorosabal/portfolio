@@ -6,9 +6,6 @@ const Experiencia = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Experiencia
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Mi trayectoria profesional y los proyectos en los que he trabajado
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
