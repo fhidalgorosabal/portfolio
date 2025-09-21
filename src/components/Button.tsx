@@ -11,7 +11,7 @@ const Button = ({
   variant = "primary",
   size = "md",
   isLoading = false,
-  className = "",
+  className = "inline-flex items-center gap-2",
   withCounter = false,
   ...props
 }: ButtonType) => {

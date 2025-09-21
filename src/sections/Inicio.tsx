@@ -1,5 +1,8 @@
-import Button from "../components/Button";
 import { useTranslation } from "../hooks/useTranslation";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { CgFileDocument } from "react-icons/cg";
+import Button from "../components/Button";
 
 const Inicio = () => {
   const { translate } = useTranslation();
@@ -22,9 +25,39 @@ const Inicio = () => {
             {translate("home-description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary">{translate("home-button-1")}</Button>
-            <Button variant="secondary">{translate("home-button-2")}</Button>
-            <Button variant="success">{translate("home-button-3")}</Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/fernando-hidalgo-rosabal-64247a214",
+                  "_blank"
+                )
+              }
+              variant="primary"
+            >
+              <FaLinkedin />
+              {translate("home-button-1")}
+            </Button>
+            <Button
+              onClick={() =>
+                window.open("https://github.com/fhidalgorosabal", "_blank")
+              }
+              variant="secondary"
+            >
+              <FaGithub />
+              {translate("home-button-2")}
+            </Button>
+            <Button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/doc/Fernando-Hidalgo-Rosabal-CV.pdf";
+                link.download = "Fernando-Hidalgo-Rosabal-CV.pdf";
+                link.click();
+              }}
+              variant="success"
+            >
+              <CgFileDocument />
+              {translate("home-button-3")}
+            </Button>
           </div>
         </div>
       </div>

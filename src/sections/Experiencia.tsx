@@ -1,6 +1,6 @@
 const Experiencia = () => {
   return (
-    <section id="experiencia" className="py-20 bg-white dark:bg-gray-900">
+    <section id="experiencia" className="py-25 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">

@@ -25,15 +25,12 @@ const Contacto = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contacto" className="pt-25 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Contacto
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            ¿Tienes un proyecto en mente? ¡Me encantaría escuchar sobre él!
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -115,7 +112,9 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-600 dark:text-gray-400">Ubicación</p>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      Ubicación
+                    </p>
                     <p className="text-gray-800 dark:text-gray-200 font-medium">
                       Ciudad, País
                     </p>
