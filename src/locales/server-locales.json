@@ -53,5 +53,110 @@
     "es": "Descargar CV",
     "en": "Download CV",
     "pt": "Baixar CV"
+  },
+  "experience-title": {
+    "es": "Experiencia",
+    "en": "Experience",
+    "pt": "Experiência"
+  },
+  "experience-name-1": {
+    "es": "Desarrollador Frontend",
+    "en": "Frontend Developer",
+    "pt": "Desenvolvedor Frontend"
+  },
+  "experience-data-1": {
+    "es": "Julio 2025 - Actualidad",
+    "en": "July 2025 - Present",
+    "pt": "Julho 2025 - Presente"
+  },
+  "experience-company-1": {
+    "es": "Defontana Chile",
+    "en": "Defontana Chile",
+    "pt": "Defontana Chile"
+  },
+  "experience-description-1": {
+    "es": "Desarrollador de Software Frontend (Angular), colaborando en el equipo que desarrolla Zenda, un software especializado en Gestión de Recursos Humanos.",
+    "en": "Frontend Software Developer (Angular), collaborating with the team that develops Zenda, a software specialized in Human Resources Management.",
+    "pt": "Desenvolvedor de Software Frontend (Angular), colaborando com a equipe que desenvolve o Zenda, um software especializado em Gestão de Recursos Humanos."
+  }, 
+  "experience-name-2": {
+    "es": "Desarrollador Fullstack Freelance",
+    "en": "Freelance Fullstack Developer",
+    "pt": "Desenvolvedor Fullstack Freelancer"
+  },
+  "experience-data-2": {
+    "es": "Febrero 2024 - Junio 2025",
+    "en": "February 2024 - June 2025",
+    "pt": "Fevereiro 2024 - Junho 2025"
+  },
+  "experience-company-2": {
+    "es": "Freelancer",
+    "en": "Freelancer",
+    "pt": "Freelancer"
+  },
+  "experience-description-2": {
+    "es": "Desarrollador de software en Angular, React, Laravel y NestJS. Diseño y desarrollo de aplicaciones web escalables y sistemas orientados a servicios.",
+    "en": "Software developer using Angular, React, Laravel, and NestJS. Design and development of scalable web applications and service-oriented systems.",
+    "pt": "Desenvolvedor de software em Angular, React, Laravel e NestJS. Design e desenvolvimento de aplicações web escaláveis e sistemas orientados a serviços."
+  },
+  "experience-name-3": {
+    "es": "Desarrollador Frontend",
+    "en": "Frontend Developer",
+    "pt": "Desenvolvedor Frontend"
+  },
+  "experience-data-3": {
+    "es": "Marzo 2021 - Diciembre 2023",
+    "en": "March 2021 - December 2023",
+    "pt": "Março 2021 - Dezembro 2023"
+  },
+  "experience-company-3": {
+    "es": "CREALOGIX - Peoplewalking",
+    "en": "CREALOGIX - Peoplewalking",
+    "pt": "CREALOGIX - Peoplewalking"
+  },
+  "experience-description-3": {
+    "es": "Desarrollador de software front-end (Angular) en CREALOGIX, líder mundial en tecnología de banca digital, y en Peoplewalking, empresa especializada en soluciones de software empresarial.",
+    "en": "Frontend software developer (Angular) at CREALOGIX, a global leader in digital banking technology, and at Peoplewalking, a company specialized in business software solutions.",
+    "pt": "Desenvolvedor de software frontend (Angular) na CREALOGIX, líder mundial em tecnologia bancária digital, e na Peoplewalking, empresa especializada em soluções de software empresarial."
+  },
+  "experience-name-4": {
+    "es": "Especialista en Ciencias Informáticas",
+    "en": "IT Specialist",
+    "pt": "Especialista em Ciências da Computação"
+  },
+  "experience-data-4": {
+    "es": "Febrero 2020 - Diciembre 2023",
+    "en": "February 2020 - December 2023",
+    "pt": "Fevereiro 2020 - Dezembro 2023"
+  },
+  "experience-company-4": {
+    "es": "DESOFT",
+    "en": "DESOFT",
+    "pt": "DESOFT"
+  },
+  "experience-description-4": {
+    "es": "Desarrollo y soporte de soluciones de software, participando en todo el ciclo de vida de producción y comercialización. Implementación de aplicaciones web utilizando Laravel y Angular, instalación y configuración de sistemas operativos y software, asegurando eficiencia y estabilidad.",
+    "en": "Development and support of software solutions, participating throughout the software production and commercialization lifecycle. Implementation of web applications using Laravel and Angular, installation and configuration of operating systems and software, ensuring efficiency and stability.",
+    "pt": "Desenvolvimento e suporte de soluções de software, participando em todo o ciclo de vida de produção e comercialização. Implementação de aplicações web utilizando Laravel e Angular, instalação e configuração de sistemas operacionais e software, garantindo eficiência e estabilidade."
+  },
+  "experience-name-5": {
+    "es": "Especialista en Informática",
+    "en": "IT Specialist",
+    "pt": "Especialista em Informática"
+  },
+  "experience-data-5": {
+    "es": "Septiembre 2017 - Diciembre 2020",
+    "en": "September 2017 - December 2020",
+    "pt": "Setembro 2017 - Dezembro 2020"
+  },
+  "experience-company-5": {
+    "es": "Electromedicina Granma",
+    "en": "Electromedicina Granma",
+    "pt": "Electromedicina Granma"
+  },
+  "experience-description-5": {
+    "es": "Especialista C en Ciencias de la Computación y Administración de Redes en el Centro de Tecnología Médica.",
+    "en": "Specialist C in Computer Science and Network Administration at the Medical Technology Center.",
+    "pt": "Especialista C em Ciências da Computação e Administração de Redes no Centro de Tecnologia Médica."
   }
 }

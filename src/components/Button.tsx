@@ -4,7 +4,7 @@ import {
   BUTTON_BASE_STYLES,
   BUTTON_SIZES,
   BUTTON_VARIANTS,
-} from "../utils/StylesButton";
+} from "../utils/stylesButton";
 
 const Button = ({
   children,

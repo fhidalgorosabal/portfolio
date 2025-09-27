@@ -1,58 +1,19 @@
-import type { ButtonHTMLAttributes } from "react";
+import type { Project } from "./Project";
+import type { Experience } from "./Experience";
+import type { Skill } from "./Skill";
+import type { ContactForm } from "./ContactForm";
+import type { Language } from "./Language";
+import type { LanguageLabels } from "./Language";
+import type { Theme } from "./Theme";
+import type { ButtonType } from "./Button";
+import type { ButtonVariant } from "./Button";
 
-export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  githubUrl?: string;
-  liveUrl?: string;
-}
-
-export interface Experience {
-  id: string;
-  company: string;
-  position: string;
-  period: string;
-  description: string;
-  technologies: string[];
-}
-
-export interface Skill {
-  id: string;
-  name: string;
-  level: number; // 1-5
-  category: "frontend" | "backend" | "tools" | "languages";
-}
-
-export interface ContactForm {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-export type Theme = "light" | "dark";
-
-export type Language = "en" | "es" | "pt";
-
-export interface LanguageLabels {
-  code: Language;
-  label: string;
-}
-
-export interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
-  size?: "sm" | "md" | "lg" | "xl";
-  isLoading?: boolean;
-  isScrolled?: boolean;
-  withCounter?: boolean;
-}
-
-export type ButtonVariant =
-  | "primary"
-  | "secondary"
-  | "success"
-  | "danger"
-  | "outline";
+export type { Project };
+export type { Experience };
+export type { Skill };
+export type { ContactForm };
+export type { Language };
+export type { LanguageLabels };
+export type { Theme };
+export type { ButtonType };
+export type { ButtonVariant };
