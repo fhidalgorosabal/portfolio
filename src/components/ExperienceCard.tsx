@@ -17,17 +17,17 @@ const ExperienceCard = ({
 
   return (
     <div
-      className={`bg-gray-100 dark:bg-gray-800 p-6 rounded-lg border-l-4 ${colors.border} shadow-lg`}
+      className={`bg-gray-100 dark:bg-gray-800 px-5 py-3 rounded-lg border-l-4 ${colors.border} shadow-lg`}
     >
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
           {translate(name)}
         </h3>
         <span className={`${colors.text} font-medium`}>
           {translate(data)}
         </span>
       </div>
-      <h4 className="text-lg text-gray-600 dark:text-gray-300 mb-3">
+      <h4 className="text-md dark:text-gray-600 text-gray-300 mb-1">
         {translate(company)}
       </h4>
       <p className="text-gray-700 dark:text-gray-300 mb-4">

@@ -7,3 +7,11 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
 }
+
+export interface ProjectCardType {
+  name: string;
+  description: string;
+  imageUrl: string;
+  codeUrl?: string;
+  demoUrl?: string;
+}

@@ -5,10 +5,10 @@ const Experiencia = () => {
   const { translate } = useTranslation();
 
   return (
-    <section id="experiencia" className="py-25 bg-gray-200 dark:bg-gray-900">
+    <section id="experiencia" className="pt-25 pb-10 bg-gray-200 dark:bg-gray-900">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white">
             {translate('experience-title')}
           </h2>
         </div>
